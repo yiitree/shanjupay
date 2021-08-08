@@ -21,7 +21,7 @@ import java.io.IOException;
 
 @Slf4j
 @Controller
-//@RestController//请求方法响应统一json格式
+//@RestController //请求方法响应统一json格式
 public class PayTestController {
 
     //应用id
