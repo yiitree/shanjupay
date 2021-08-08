@@ -5,10 +5,10 @@ import org.apache.rocketmq.spring.core.RocketMQListener;
 import org.springframework.stereotype.Component;
 
 /**
- * @author Administrator
- * @version 1.0
- **/
+ * 监听消息
+ */
 @Component
+//  监听的消息的topic   监听的也需要创建一个组
 @RocketMQMessageListener(topic = "my-topic",consumerGroup="demo-consumer-group")
 public class ConsumerSimple implements RocketMQListener<String> {
 

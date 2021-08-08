@@ -8,9 +8,8 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @author Administrator
- * @version 1.0
- **/
+ * 订单类
+ */
 @Data
 @NoArgsConstructor
 @ToString

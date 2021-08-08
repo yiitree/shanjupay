@@ -20,11 +20,17 @@ public class ProducerSimpleTest {
     @Autowired
     ProducerSimple producerSimple;
 
+    /**
+     * 发送同步消息
+     */
     @Test
     public void testSendSyncMsg(){
-        producerSimple.sendSyncMsg("my-topic","第2条同步消息");
+        producerSimple.sendSyncMsg("my-topic", "第33条同步消息");
     }
 
+    /**
+     * 发送异步消息
+     */
     @Test
     public void testSendASyncMsg(){
         producerSimple.sendASyncMsg("my-topic","第1条异步消息");
@@ -35,6 +41,7 @@ public class ProducerSimpleTest {
         }
     }
 
+
     @Test
     public void testSendMsgByJson(){
         OrderExt orderExt = new OrderExt();
@@ -44,6 +51,7 @@ public class ProducerSimpleTest {
 
         producerSimple.sendMsgByJson("my-topic-obj",orderExt);
     }
+
     @Test
     public void testSendMsgByJsonDelay(){
         OrderExt orderExt = new OrderExt();

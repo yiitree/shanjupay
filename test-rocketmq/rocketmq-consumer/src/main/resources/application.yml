@@ -6,5 +6,7 @@ server:
 spring:
   application:
     name: rocketmq-producer #指定服务名
+
 rocketmq:
-  nameServer: 127.0.0.1:9876
+  # mq地址
+  nameServer: 58.221.72.174:9876
